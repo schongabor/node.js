@@ -1,0 +1,43 @@
+Some js global objects:
+
+    console.log()
+
+    setTimeout()
+    clearTimeout()
+
+    setInterval()
+    clearInterval()
+
+    To reach globals in browser you can start with 
+
+    window.console.log
+
+    in node instead of window you can use the global keyword like
+
+    global.console.log(....)
+
+    but it is not neccecary
+
+    Variables have only scope to the file
+
+Every file in a node app is considered as a module. Vars and functions inside are loacally scoped.
+
+    console.log(module) 
+
+    Module {
+    id: '.',
+    path: 'C:\\Users\\schong\\Documents\\node.js\\section-2',
+    exports: {},
+    parent: null,
+    filename: 'C:\\Users\\schong\\Documents\\node.js\\section-2\\app.js',
+    loaded: false,
+    children: [],
+    paths: [
+        'C:\\Users\\schong\\Documents\\node.js\\section-2\\node_modules',
+        'C:\\Users\\schong\\Documents\\node.js\\node_modules',
+        'C:\\Users\\schong\\Documents\\node_modules',
+        'C:\\Users\\schong\\node_modules',
+        'C:\\Users\\node_modules',
+        'C:\\node_modules'
+    ]
+    }

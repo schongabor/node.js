@@ -1,0 +1,1 @@
+1. npm init is always the first step before adding any npm packages
