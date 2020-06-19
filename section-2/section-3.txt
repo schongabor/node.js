@@ -1,1 +1,88 @@
 1. npm init is always the first step before adding any npm packages
+
+GitIgnore
+
+new file with name .gitignore and list items like "node_modules/"
+
+Caret character - Semantic versioning / SemVer
+
+^ in package.json before version
+
+^4.13.6 === 4.x
+
+4 - Major version ()
+13 - Minior version (increase after adding new features, but not break the existing API after that the patch version starts from 0)
+6 - Patch version (increase after bug fixes)
+
+^ sign tells to npm that we are interested in any newer minior or petch version of package as long the main version is the same
+
+~4.13.6 === 4.13.x
+
+To get exact the same version just remove ~ or ^:
+
+4.13.6 
+
+npm list - lists all the installed dependencies with versions
+npm list --depth=0 lists only the app dependencies
+npm view mongoose - check library infos
+npm view mongoose dependencies - check only dependencies
+npm view mongoose versions - all versions released untill now
+
+downgrade version
+
+npm i mongoose@2.4.2 - installs exact the version we need
+
+updating outdated packages
+
+npm outdated - shows outdated librarie versions
+npm update - will update to the latest major or minior version depanding ~ or ^
+
+for force update to latest versions installe
+
+npm i -g npm-check-updates
+
+npm-check-updates or ncu
+
+after updating dependencies to take effect run npm i
+
+developement dependencies
+
+some dependencies shell only be used during the developement - to install a dev dep.:
+
+npm i somenpmpackage --save-dev =>
+
+  "devDependencies": {
+    "jshint": "^2.11.1"
+  }
+
+uninstall a package
+
+npm uninstall or un packageName
+
+global packages
+
+for example npm is a global package, you can use it not only in the project folder
+to install a package globally use the -g flag:
+
+npm i -g packageName 
+
+publish a package to npm
+
+1. mkdir
+2. npm init
+3. index.js
+
+npm adduser
+npm login
+user:
+pass:
+email:
+npm publish
+
+update package
+
+npm version version/minior/patch
+npm publish
+
+
+

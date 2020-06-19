@@ -1,0 +1,11 @@
+{
+  "name": "dani-duck",
+  "version": "1.0.0",
+  "description": "danu ducks brewery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "b'n'b",
+  "license": "ISC"
+}
